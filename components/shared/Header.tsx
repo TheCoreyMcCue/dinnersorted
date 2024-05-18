@@ -14,12 +14,6 @@ const Header = () => {
           <Image src={appIcon} width={35} height={10} alt="" />
         </Link>
         <div className="flex w-32 justify-end gap-3 ">
-          <SignedOut>
-            <SignInButton>
-              <Button className="rounded-full">Login</Button>
-            </SignInButton>
-          </SignedOut>
-
           {/* <SignedIn>
             <nav className="md:flex-between hidden w-full max-w-xs">
               <NavItems />
