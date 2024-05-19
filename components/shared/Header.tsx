@@ -1,5 +1,5 @@
 import Link from "@/node_modules/next/link";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton, SignOutButton } from "@clerk/nextjs";
 import { Button } from "../ui/button";
 
 import appIcon from "../../app/icon.png";
@@ -24,7 +24,7 @@ const Header = () => {
 
         <div className="flex w-32 justify-end gap-3">
           <SignedIn>
-            <MobileNav UserButton={UserButton} />
+            <MobileNav SignOutButton={SignOutButton} />
           </SignedIn>
           <SignedOut>
             <Button asChild className="rounded-full">
