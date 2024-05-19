@@ -10,7 +10,11 @@ import Image from "next/image";
 import { Separator } from "../ui/separator";
 import NavItems from "./NavItems";
 
-const MobileNav = ({ UserButton }: Props) => {
+type Props = {
+  UserButton: React.ComponentType;
+};
+
+const MobileNav: React.FC<Props> = ({ UserButton }) => {
   return (
     <nav className="md:hidden">
       <Sheet>
