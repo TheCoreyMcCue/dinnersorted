@@ -15,13 +15,6 @@ const Header = () => {
           <Image src={appIcon} width={35} height={10} alt="" />
         </Link>
 
-        <SignedIn>
-          <nav className="md:flex-between hidden w-full max-w-xs">
-            <NavItems />
-            <UserButton afterSignOutUrl="/" />
-          </nav>
-        </SignedIn>
-
         <div className="flex w-32 justify-end gap-3">
           <SignedIn>
             <MobileNav SignOutButton={SignOutButton} />
@@ -32,6 +25,13 @@ const Header = () => {
             </Button>
           </SignedOut>
         </div>
+
+        <SignedIn>
+          <nav className="md:flex-between hidden w-full max-w-xs">
+            <NavItems />
+            <UserButton afterSignOutUrl="/" />
+          </nav>
+        </SignedIn>
       </div>
     </section>
   );
