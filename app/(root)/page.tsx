@@ -11,11 +11,12 @@ const Home = async () => {
       <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
         <div className="flex flex-col justify-center gap-8">
           <h1 className="h1-bold">
-            Never struggle to decide what's for dinner again. Dinner is Sorted!
+            Never struggle to decide what&apos;s for dinner again. Dinner is
+            Sorted!
           </h1>
           <p className="p-regular-18 md:p-regular-15">
-            Tired of the daily "what's for dinner tonight" struggle? Let us
-            figure it out for you!
+            Tired of the daily &quot;what&apos;s for dinner tonight&quot;
+            struggle? Let us figure it out for you!
           </p>
           <Button size="lg" asChild className="button w-full sm:w-fit">
             <Link href="#">Explore Now</Link>
