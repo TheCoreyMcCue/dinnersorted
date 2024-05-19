@@ -10,7 +10,7 @@ const NavItems = () => {
 
   return (
     <ul className="md:flex-between flex w-full flex-col items-start gap-5 md:flex-row">
-      <li className={`flex-center p-medium-16 whitespace-nowrap`}>
+      <li className="">
         <Link href="/hello">hello</Link>
         <Link href="/hello">hello</Link>
         <Link href="/hello">hello</Link>
